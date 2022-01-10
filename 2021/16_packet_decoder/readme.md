@@ -1,4 +1,4 @@
---- Day 16: Packet Decoder ---
+# --- Day 16: Packet Decoder ---
 
 As you leave the cave and reach open waters, you receive a transmission from the Elves back on the ship.
 

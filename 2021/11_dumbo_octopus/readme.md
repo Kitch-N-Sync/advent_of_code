@@ -1,4 +1,4 @@
---- Day 11: Dumbo Octopus ---
+# --- Day 11: Dumbo Octopus ---
 
 You enter a large cavern full of rare bioluminescent dumbo octopuses! They seem to not like the Christmas lights on your submarine, so you turn them off for now.
 
@@ -300,7 +300,7 @@ Given the starting energy levels of the dumbo octopuses in your cavern, simulate
 
 Your puzzle answer was 1562.
 
---- Part Two ---
+## --- Part Two ---
 
 It seems like the individual flashes aren't bright enough to navigate. However, you might have a better option: the flashes seem to be synchronizing!
 

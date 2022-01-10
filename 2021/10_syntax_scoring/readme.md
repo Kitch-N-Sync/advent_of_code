@@ -1,4 +1,4 @@
---- Day 10: Syntax Scoring ---
+# --- Day 10: Syntax Scoring ---
 
 You ask the submarine to determine the best route out of the deep-sea cave, but it only replies:
 
@@ -57,7 +57,7 @@ Find the first illegal character in each corrupted line of the navigation subsys
 
 Your puzzle answer was 296535.
 
---- Part Two ---
+## --- Part Two ---
 
 Now, discard the corrupted lines. The remaining lines are incomplete.
 

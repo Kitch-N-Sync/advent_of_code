@@ -1,4 +1,4 @@
---- Day 9: Smoke Basin ---
+# --- Day 9: Smoke Basin ---
 
 These caves seem to be lava tubes. Parts are even still volcanically active; small hydrothermal vents release smoke into the caves that slowly settles like rain.
 
@@ -26,7 +26,7 @@ Your puzzle answer was 518.
 
 The first half of this puzzle is complete! It provides one gold star: *
 
---- Part Two ---
+## --- Part Two ---
 
 Next, you need to find the largest basins so you know what areas are most important to avoid.
 
