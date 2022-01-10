@@ -1,4 +1,4 @@
---- Day 7: The Treachery of Whales ---
+# --- Day 7: The Treachery of Whales ---
 
 A giant whale has decided your submarine is its next meal, and it's much faster than you are. There's nowhere to run!
 
@@ -35,7 +35,7 @@ Determine the horizontal position that the crabs can align to using the least fu
 
 Your puzzle answer was 343441.
 
---- Part Two ---
+## --- Part Two ---
 
 The crabs don't seem interested in your proposed solution. Perhaps you misunderstand crab engineering?
 

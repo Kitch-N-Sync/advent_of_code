@@ -1,4 +1,4 @@
---- Day 17: Trick Shot ---
+# --- Day 17: Trick Shot ---
 
 You finally decode the Elves' message. HI, the message says. You continue searching for the sleigh keys.
 

@@ -1,4 +1,4 @@
---- Day 8: Seven Segment Search ---
+# --- Day 8: Seven Segment Search ---
 
 You barely reach the safety of the cave when the whale smashes into the cave mouth, collapsing it. Sensors indicate another exit to this cave at a much greater depth, so you have no choice but to press on.
 
@@ -72,7 +72,7 @@ In the output values, how many times do digits 1, 4, 7, or 8 appear?
 
 Your puzzle answer was 310.
 
---- Part Two ---
+## --- Part Two ---
 
 Through a little deduction, you should now be able to determine the remaining digits. Consider again the first example above:
 

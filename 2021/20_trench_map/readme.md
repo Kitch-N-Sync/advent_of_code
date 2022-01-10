@@ -1,4 +1,4 @@
---- Day 20: Trench Map ---
+# --- Day 20: Trench Map ---
 
 With the scanners fully deployed, you turn their attention to mapping the floor of the ocean trench.
 
