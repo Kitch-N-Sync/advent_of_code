@@ -6,11 +6,11 @@ If you can model how the smoke flows through the caves, you might be able to avo
 
 Smoke flows to the lowest point of the area it's in. For example, consider the following heightmap:
 
-2199943210
-3987894921
-9856789892
-8767896789
-9899965678
+    2199943210
+    3987894921
+    9856789892
+    8767896789
+    9899965678
 
 Each number corresponds to the height of a particular location, where 9 is the highest and 0 is the lowest a location can be.
 
@@ -34,37 +34,37 @@ A basin is all locations that eventually flow downward to a single low point. Th
 
 The size of a basin is the number of locations within the basin, including the low point. The example above has four basins.
 
-The top-left basin, size 3:
-
-2199943210
-3987894921
-9856789892
-8767896789
-9899965678
-
-The top-right basin, size 9:
-
-2199943210
-3987894921
-9856789892
-8767896789
-9899965678
-
-The middle basin, size 14:
-
-2199943210
-3987894921
-9856789892
-8767896789
-9899965678
-
-The bottom-right basin, size 9:
-
-2199943210
-3987894921
-9856789892
-8767896789
-9899965678
+    - The top-left basin, size 3:
+    
+    2199943210
+    3987894921
+    9856789892
+    8767896789
+    9899965678
+    
+    - The top-right basin, size 9:
+    
+    2199943210
+    3987894921
+    9856789892
+    8767896789
+    9899965678
+    
+    - The middle basin, size 14:
+    
+    2199943210
+    3987894921
+    9856789892
+    8767896789
+    9899965678
+    
+    - The bottom-right basin, size 9:
+    
+    2199943210
+    3987894921
+    9856789892
+    8767896789
+    9899965678
 
 Find the three largest basins and multiply their sizes together. In the above example, this is 9 * 14 * 9 = 1134.
 

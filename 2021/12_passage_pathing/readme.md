@@ -4,13 +4,13 @@ With your submarine's subterranean subsystems subsisting suboptimally, the only 
 
 Fortunately, the sensors are still mostly working, and so you build a rough map of the remaining caves (your puzzle input). For example:
 
-start-A
-start-b
-A-c
-A-b
-b-d
-A-end
-b-end
+    start-A
+    start-b
+    A-c
+    A-b
+    b-d
+    A-end
+    b-end
 
 This is a list of how all of the caves are connected. You start in the cave named start, and your destination is the cave named end. An entry like b-d means that cave b is connected to cave d - that is, you can move between them.
 
@@ -26,16 +26,16 @@ Your goal is to find the number of distinct paths that start at start, end at en
 
 Given these rules, there are 10 paths through this example cave system:
 
-start,A,b,A,c,A,end
-start,A,b,A,end
-start,A,b,end
-start,A,c,A,b,A,end
-start,A,c,A,b,end
-start,A,c,A,end
-start,A,end
-start,b,A,c,A,end
-start,b,A,end
-start,b,end
+    start,A,b,A,c,A,end
+    start,A,b,A,end
+    start,A,b,end
+    start,A,c,A,b,A,end
+    start,A,c,A,b,end
+    start,A,c,A,end
+    start,A,end
+    start,b,A,c,A,end
+    start,b,A,end
+    start,b,end
 
 (Each line in the above list corresponds to a single path; the caves visited by that path are listed in the order they are visited and separated by commas.)
 
@@ -43,58 +43,58 @@ Note that in this cave system, cave d is never visited by any path: to do so, ca
 
 Here is a slightly larger example:
 
-dc-end
-HN-start
-start-kj
-dc-start
-dc-HN
-LN-dc
-HN-end
-kj-sa
-kj-HN
-kj-dc
+    dc-end
+    HN-start
+    start-kj
+    dc-start
+    dc-HN
+    LN-dc
+    HN-end
+    kj-sa
+    kj-HN
+    kj-dc
 
 The 19 paths through it are as follows:
 
-start,HN,dc,HN,end
-start,HN,dc,HN,kj,HN,end
-start,HN,dc,end
-start,HN,dc,kj,HN,end
-start,HN,end
-start,HN,kj,HN,dc,HN,end
-start,HN,kj,HN,dc,end
-start,HN,kj,HN,end
-start,HN,kj,dc,HN,end
-start,HN,kj,dc,end
-start,dc,HN,end
-start,dc,HN,kj,HN,end
-start,dc,end
-start,dc,kj,HN,end
-start,kj,HN,dc,HN,end
-start,kj,HN,dc,end
-start,kj,HN,end
-start,kj,dc,HN,end
-start,kj,dc,end
+    start,HN,dc,HN,end
+    start,HN,dc,HN,kj,HN,end
+    start,HN,dc,end
+    start,HN,dc,kj,HN,end
+    start,HN,end
+    start,HN,kj,HN,dc,HN,end
+    start,HN,kj,HN,dc,end
+    start,HN,kj,HN,end
+    start,HN,kj,dc,HN,end
+    start,HN,kj,dc,end
+    start,dc,HN,end
+    start,dc,HN,kj,HN,end
+    start,dc,end
+    start,dc,kj,HN,end
+    start,kj,HN,dc,HN,end
+    start,kj,HN,dc,end
+    start,kj,HN,end
+    start,kj,dc,HN,end
+    start,kj,dc,end
 
 Finally, this even larger example has 226 paths through it:
 
-fs-end
-he-DX
-fs-he
-start-DX
-pj-DX
-end-zg
-zg-sl
-zg-pj
-pj-he
-RW-he
-fs-DX
-pj-RW
-zg-RW
-start-pj
-he-WI
-zg-he
-pj-fs
-start-RW
+    fs-end
+    he-DX
+    fs-he
+    start-DX
+    pj-DX
+    end-zg
+    zg-sl
+    zg-pj
+    pj-he
+    RW-he
+    fs-DX
+    pj-RW
+    zg-RW
+    start-pj
+    he-WI
+    zg-he
+    pj-fs
+    start-RW
 
 How many paths through this cave system are there that visit small caves at most once?
