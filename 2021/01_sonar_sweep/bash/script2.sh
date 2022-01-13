@@ -1,13 +1,17 @@
 #!/bin/bash
-file="input"
-reading=$(cat $file)
+
+inputfilename="input"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
+
+reading=$(cat $inputfile)
 groupsum0=0
 total=-3
 triarray0=0
 triarray1=0
 
 echo 'tria0	tria1	tria2	grps0	grps1	tot'
-for item in $reading
+for item in $(< $inputfile)
 do
 	triarray2=$item
 	groupsum1=$((triarray0+triarray1+triarray2))
