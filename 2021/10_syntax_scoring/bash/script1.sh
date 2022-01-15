@@ -1,6 +1,8 @@
 #!/bin/bash
 
-inputfile="input"
+inputfilename="input"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
 
 mapfile -t filerow <$inputfile
 

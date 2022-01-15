@@ -4,7 +4,6 @@ inputfilename="input"
 inputfiledir="$(dirname $(dirname $(realpath $0)))/"
 inputfile="$inputfiledir/$inputfilename"
 
-reading=$(cat $inputfile)
 groupsum0=0
 total=-3
 triarray0=0

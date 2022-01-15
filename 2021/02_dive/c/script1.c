@@ -5,8 +5,7 @@
 int main(void) {
 	int status = EXIT_SUCCESS;
 	FILE *inputfile;
-
-	if ((inputfile = fopen("input","r")) == NULL ) {
+	if ((inputfile = fopen("../input","r")) == NULL ) {
 		fputs("Error reading input file\n",stderr);
 		return EXIT_FAILURE;
 	}
@@ -15,6 +14,7 @@ int main(void) {
 	char dir[10];
 	int amt;
 	int x=0, y=0;
+	int i=1;
 
 	while (fscanf(inputfile, "%s %d",dir,&amt) != EOF) {
 
@@ -33,6 +33,10 @@ int main(void) {
 		}
 		
 		printf("%c %d (%d,%d)\t",dir[0],amt,x,y);
+		if (i % 4 == 0) {
+			printf("\n");
+		}
+		i++;
 	}
 
 	fclose(inputfile);

@@ -3,18 +3,18 @@
 #include <string.h>
 
 int main(void) {
+	FILE *inputfile;
+	if ((inputfile = fopen("../input","r")) == NULL ) {
+		fputs("Error reading input file\n",stderr);
+		return EXIT_FAILURE;
+	}
+
 	int status = EXIT_SUCCESS;
 	int scancheck = 0;
 
 	int a = 0, b = 0, c = 0;
 	int sum1=0, sum2=0;
 	int total = 0;
-
-	FILE *inputfile;
-	if ((inputfile = fopen("input","r")) == NULL ) {
-		fputs("Error reading input file\n",stderr);
-		return EXIT_FAILURE;
-	}
 
 	do {
 		scancheck = fscanf(inputfile,"%d",&c);
