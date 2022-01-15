@@ -1,6 +1,9 @@
 #!/bin/bash
 
-inputfile="input"
+inputfilename="input"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
+
 filelen=($(wc -l $inputfile))
 lowpoints=0
 

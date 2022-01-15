@@ -1,13 +1,16 @@
 #!/bin/bash
-clear
 
-inputfile="input"
+inputfilename="input"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
+
 declare -A octo
 
 mapfile -t rowdata <$inputfile
 
 last=$((${#rowdata[0]}-1))
 
+clear
 #echo "COL 	ROW 	POSI	DATA"
 #echo ""
 

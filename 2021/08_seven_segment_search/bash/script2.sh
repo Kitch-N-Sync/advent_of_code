@@ -1,6 +1,9 @@
 #!/bin/bash
 
-inputfile="input2"
+inputfilename="input2"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
+
 cycle=0
 i=0
 segmentarray="a b c d e f g"

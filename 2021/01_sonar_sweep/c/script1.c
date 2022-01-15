@@ -3,17 +3,17 @@
 #include <string.h>
 
 int main(void) {
+	FILE *inputfile;
+	if ((inputfile = fopen("../input","r")) == NULL ) {
+		fputs("Error reading input file\n",stderr);
+		return EXIT_FAILURE;
+	}
+
 	int status = EXIT_SUCCESS;
 	int a = 0;
 	int b = 0;
 	int total = 0;
 	int scancheck = 0;
-
-	FILE *inputfile;
-	if ((inputfile = fopen("input","r")) == NULL ) {
-		fputs("Error reading input file\n",stderr);
-		return EXIT_FAILURE;
-	}
 
 	do {
 		scancheck = fscanf(inputfile,"%d",&b);

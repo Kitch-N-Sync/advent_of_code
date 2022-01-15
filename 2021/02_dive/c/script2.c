@@ -5,8 +5,7 @@
 int main(void) {
 	int status = EXIT_SUCCESS;
 	FILE *inputfile;
-
-	if ((inputfile = fopen("input","r")) == NULL ) {
+	if ((inputfile = fopen("../input","r")) == NULL ) {
 		fputs("Error reading input file\n",stderr);
 		return EXIT_FAILURE;
 	}

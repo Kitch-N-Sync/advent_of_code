@@ -1,6 +1,9 @@
 #!/bin/bash
 
-input_file="input2"
+inputfilename="input2"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
+
 xdist=999
 ydist=999
 lineamt=499
@@ -12,7 +15,7 @@ i=0
 count=0
 
 #Map data to individual linecoords
-for data in $(< $input_file)
+for data in $(< $inputfile)
 do
 	case "$i" in
 		0) linecoord["$linenum,x0"]=$data;;

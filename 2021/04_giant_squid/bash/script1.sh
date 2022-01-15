@@ -1,7 +1,11 @@
-#!/bin/bash 
+#!/bin/bash
 
-calloutfile="numbers"
-boardfile="boards2"
+calloutfilename="numbers"
+boardfilename="boards2"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+calloutfile="$inputfiledir/$calloutfilename"
+boardfile="$inputfiledir/$boardfilename"
+
 declare -A boardsarray
 boardnum=0
 itemnum=0

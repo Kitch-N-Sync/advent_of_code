@@ -1,6 +1,8 @@
 #!/bin/bash
 
-inputfile="input2"
+inputfilename="input2"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
 
 #Read exit data
 while read data1 data2;do

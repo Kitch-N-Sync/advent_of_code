@@ -1,6 +1,8 @@
 #!/bin/bash
 
-inputfile="input2"
+inputfilename="input2"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
 
 while read -a display;do
 	echo "Len of ${display[$i]} = ${#display[$i]}"

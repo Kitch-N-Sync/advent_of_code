@@ -1,6 +1,9 @@
 #!/bin/bash
 
-file="input"
+inputfilename="input"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
+
 lines=0
 
 
@@ -18,7 +21,7 @@ while read data;do
 	((one+=${data:10:1}))
 	((zero+=${data:11:1}))
 	((lines+=1))
-done < $file
+done < $inputfile
 
 ((half=$lines/2))
 

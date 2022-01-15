@@ -1,6 +1,10 @@
 #!/bin/bash
-file="input"
-reading=$(cat $file)
+
+inputfilename="input"
+inputfiledir="$(dirname $(dirname $(realpath $0)))"
+inputfile="$inputfiledir/$inputfilename"
+
+reading=$(cat $inputfile)
 item1=0
 total=-1
 

@@ -1,6 +1,9 @@
 #!/bin/bash
 
-inputfile="input1"
+inputfilename="input"
+inputfiledir="$(dirname $(dirname $(realpath $0)))/"
+inputfile="$inputfiledir/$inputfilename"
+
 
 mapfile -td, lanternfish < $inputfile
 
